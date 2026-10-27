@@ -1,0 +1,386 @@
+* {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffe4ec;
+    background-image: url(../img/fundo4.png);
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p {
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+.barra_nav {
+    width: 100%;
+    height: 90px;
+    background-color: #fa9dbb;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.barra_nav2 {
+    width: 100%;
+    height: 22px;
+    background-color: #fce7de;
+}
+
+.logo_nav {
+    height: 190px;
+    margin-top: 0;
+    position: relative;
+    z-index: 2;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 20px;
+    color: white;
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: white;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navigation a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+    background-color: #fff;
+}
+
+/* padrao */
+
+
+.eventos {
+    width: 100%;
+    padding-bottom: 3rem;
+    background-color: #fa9dbb;
+}
+
+.txt_eventos {
+    color: #fff;
+    text-align: center;
+    font-size: 22px;
+    padding-top: 1.5rem;
+}
+
+.menu_drop {
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+}
+
+.btn-size {
+    max-width: 300px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.btn_menu {
+    display: none;
+}
+
+.container_produto {
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.banner {
+    width: 100%;
+    height: 600px;
+    background-image: url("../img/bolo.avif");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_doces {
+    max-width: 225px;
+    width: 90%;
+    height: 310px;
+    background-color: #ffc1d5;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 10px;
+    transition: 0.5s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card_doces:hover {
+    cursor: pointer;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.img_card {
+    width: 100%;
+    height: 200px;
+    border-radius: 20px 20px 20px 20px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.img_card:hover {
+    transform: scale(1.1);
+}
+
+
+.txt_card {
+    font-weight: bold;
+}
+
+.dt_card {
+    font-size: 11px;
+    margin-bottom: 15px;
+}
+
+.btn_card {
+    width: 60%;
+    height: 20px;
+    background-color: #fff;
+    border: 1px solid #fc6998;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn_card:hover {
+    background-color: #fc6998;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn_card h4 {
+    color: #fc6998;
+    font-size: 13px;
+}
+
+.btn_card:hover h4 {
+    color: white;
+    font-size: 13px;
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+
+/*pé*/
+
+.info_contato {
+    font-size: 1rem;
+    color: white;
+    font-weight: 700;
+}
+
+.contato i {
+    font-size: 25px;
+}
+
+.contato {
+    background-color: #fa9dbb;
+
+}
+
+.contato h2 {
+    font-weight: 600;
+    color: #f14c80;
+    margin-top: 12px;
+}
+
+.barra_footer {
+    width: 100%;
+    height: 22px;
+    background-color: #fce7de;
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+    #carouselExampleInterval {
+        display: none;
+    }
+
+    body {
+        font-size: 16px;
+    }
+
+    nav {
+        display: block;
+    }
+
+    p {
+        text-align: justify;
+    }
+
+    .menu {
+        display: none;
+        right: 0;
+        width: 60%;
+        background-color: #fa9dbb;
+    }
+
+    .navigation a {
+        width: 100%;
+        height: auto;
+        display: block;
+        text-align: center;
+        padding: 15px 0;
+        margin-right: 6rem;
+        cursor: pointer;
+        transition: 0.5s ease;
+        border-radius: 20px;
+    }
+
+    .navigation a:hover {
+        background-color: #f14c80;
+    }
+
+    .barra_nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: auto;
+        padding: 0 10px;
+    }
+
+    .logo_nav {
+        transform: scale(2);
+        margin: 0px 30px;
+        margin-right: auto;
+        height: 100px;
+    }
+
+    .navigation {
+        margin: 0;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .container {
+        width: 95%;
+        height: auto;
+        padding: 25px 15px;
+    }
+
+    .pensativo {
+        float: none;
+        display: block;
+        margin: 0 auto 25px;
+        max-width: 250px;
+        width: 60%;
+        height: auto;
+    }
+
+    .banner {
+        display: none;
+    }
+
+    .card_propaganda {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .dropdown {
+        flex-basis: calc(50% - 10px);
+        max-width: none;
+    }
+
+    .img_card1 {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        border-radius: 15px;
+    }
+
+    .img_card1:hover {
+        width: 100%;
+        max-width: 500px;
+        transform: scale(1.03);
+    }
+
+    .txt_card1 {
+        padding: 0 10px;
+    }
+
+    .btn_menu {
+        display: block;
+        position: absolute;
+        right: 2rem;
+        top: 3rem;
+        cursor: pointer;
+    }
+
+    .btn_menu:hover {
+        opacity: 0.7;
+    }
+
+    .show {
+        display: block;
+    }
+
+    .menu.show .navigation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+        gap: 10px;
+    }
+
+    /* pé */
+    .contato {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .coluna1,
+    .coluna2,
+    .coluna3 {
+        padding: 25px 15px;
+        border-bottom: 1px solid #fce7de;
+    }
+
+    .coluna3 {
+        border-bottom: none;
+    }
+}

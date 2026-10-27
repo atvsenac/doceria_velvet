@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+ 
+    <link rel="stylesheet" href="contato.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+ 
+<body>
+ 
+    <header>
+      <nav class="barra_nav d-flex align-items-center justify-content-between">
+        <img src="logo.png" alt="logo" class="logo_nav mt-3">
+        
+        <span class="btn_menu">
+            <i class="fa-solid fa-bars fa-2xl" style="color: #f14c80;"></i>
+        </span>
+        
+        <div class="menu">
+            <div class="navigation m-5">
+                <a href="./produtos.html">Produtos</a>
+                <a href="./login.html">Login</a>
+                <a href="./index.html">Início</a>
+            </div>
+        </div>
+    </nav>
+    <div class="barra_nav2"></div>
+
+  </header>
+ 
+    <main>
+        <div class="container mt-5">
+            <form action="mailto:seuemail@exemplo.com" method="post" enctype="text/plain">
+                <h2>Contato</h2>
+                <div class="input-box">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="input-box">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-box">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                </div>
+                <div class="button-group">
+                    <input class="btn" type="submit" value="Enviar">
+                    <input class="btn" type="reset" value="Limpar">
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="barra_footer mt-5"></div>
+        <div class="contato d-flex align-items-center justify-content-center" style="color: white">
+            <div class="coluna1 p-5 d-flex flex-column">
+                <i class="fa-regular fa-envelope "></i>
+                <h2>E-mail</h2>
+                <p class="txt_contato mt-4">Tem Alguma Duvida?</p>
+                <h4 class="info_contato">contato.velvet@hotmail.com</h4>
+            </div>
+            <div class="coluna2 p-5 d-flex flex-column">
+                <i class="fa-solid fa-phone-flip fa-flip-horizontal"></i>
+                <h2>Telefone</h2>
+                <p class="txt_contato mt-4">Prefere Ligar? Este é o Nosso Número.</p>
+                <h4 class="info_contato">4002-8922</h4>
+            </div>
+            <div class="coluna3 p-5 d-flex flex-column">
+                <i class="fa-brands fa-whatsapp"></i>
+                <h2>WhatsApp</h2>
+                <p class="txt_contato mt-4">Orçamentos e Encomendas Via WhatsApp.</p>
+                <h4 class="info_contato">(00) 00000-0000</h4>
+            </div>
+ 
+        </div>
+ 
+ 
+ 
+    </footer>
+ 
+ 
+ 
+ 
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+ 
+</html>

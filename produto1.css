@@ -1,0 +1,144 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+.caixa-branca {
+    background-color: #fff3ed;
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    max-width: 1140px;
+    margin: 40px auto;
+    cursor: pointer;
+    transition: 0.5s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+}
+
+.caixa-branca:hover{
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.produto-detalhes,
+.nutricional-info,
+.bolo-section {
+    padding: 40px 0;
+}
+
+.produto-detalhes {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.produto-image-container {
+    flex: 1 1 500px;
+    text-align: center;
+}
+
+.produto-image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.produto-info {
+    flex: 1 1 400px;
+}
+
+.produto-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.produto-description {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.nutricional-info {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.nutricional-titulo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fc6998;
+    margin-bottom: 10px;
+}
+
+.nutricional-text {
+    font-size: 14px;
+    color: #888;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.bolo-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.bolo-content {
+    text-align: center;
+    flex: 1 1 400px;
+}
+
+.bolo-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.bolo-button {
+    background-color: #fc6998;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+    transition: background-color 0.3s;
+}
+
+.bolo-button:hover {
+    background-color: #ea5c89;
+}
+
+.bolo-image-container {
+    flex: 1 1 300px;
+    text-align: center;
+}
+
+.bolo-image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .produto-title {
+        font-size: 36px;
+    }
+
+    .produto-detalhes,
+    .bolo-section {
+        flex-direction: column;
+        text-align: center;
+    }
+}
